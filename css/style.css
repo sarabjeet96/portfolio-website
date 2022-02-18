@@ -9,6 +9,7 @@
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
+    --ff-tertiary: 'Ubuntu Mono', monospace;
     
     --fw-reg: 300;
     --fw-bold: 900;
@@ -48,7 +49,7 @@ body {
     background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-tertiary);
     font-size: var(--fs-body);
     line-height: 1.6;
 }
@@ -144,6 +145,12 @@ header {
 
 .logo {
     max-width: 100px;
+}
+
+.logo__text {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.5em;
+    text-transform: lowercase;
 }
 
 .nav {
@@ -454,7 +461,7 @@ header {
 
 .footer {
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -468,6 +475,8 @@ header {
 
 .footer__link {
     font-weight: var(--fw-bold);
+    font-size: 20px;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 .footer__link:hover,
@@ -507,4 +516,11 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.mail-container, .phone-container {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
 }
