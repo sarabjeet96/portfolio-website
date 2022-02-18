@@ -17,13 +17,16 @@
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
     
-    --fs-h1: 3rem;
+    --fs-h1: 3rem;   
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+          
+    --secondary-shadow: #a17a69;
+      
 }
 
 @media (min-width: 800px) {
@@ -282,23 +285,60 @@ header {
     }
 }
 
+/* My Skills */
 
+.skills {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+    /* margin-top: 1rem; */
+  }
+  
+  .skills-wrapper {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    /* margin-top: 1rem; */
+    margin-left: auto;   
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+
+  .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  
 
 /*  My services section  */
-
+/* 
 .my-services {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
-}
-
+} */
+/* 
 .section__title--services {
     color: var(--clr-accent);
     position: relative;
-}
+} */
 
 .section__title--services::after {
     content: '';
@@ -309,7 +349,7 @@ header {
     background: var(--clr-light);
     opacity: 0.25;
 }
-
+/* 
 .services {
     margin-bottom: 4em;
 }
@@ -317,8 +357,8 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
-}
-
+} */
+/* 
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -331,7 +371,7 @@ header {
         margin-left: 2em;
     }
 }
-
+ */
 
 .about-me {
     max-width: 1000px;
