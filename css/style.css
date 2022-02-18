@@ -314,7 +314,14 @@ header {
     /* margin-top: 1rem; */
     margin-left: auto;   
   }
-  
+ 
+  @media (max-width: 450px){
+    .skills-wrapper {
+        margin-left: 5rem;
+    }
+
+  }
+
   .skill-header {
     margin-bottom: 1rem;
   }
@@ -330,7 +337,7 @@ header {
 
   .icon-card {
     background-color: #fff;
-    border-radius: 11px;
+    border-radius: 15px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
     margin: 10px;
@@ -446,6 +453,12 @@ header {
     overflow: hidden;
 }
 
+@media (max-width: 450px){
+    .portfolio__item {
+        background: var(--clr-accent);
+        overflow: hidden;
+    }
+}
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
