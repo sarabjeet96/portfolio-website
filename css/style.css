@@ -155,7 +155,7 @@ header {
 
 .logo__text {
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-transform: lowercase;
 }
 
@@ -283,9 +283,10 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 260px;
         position: relative;
         z-index: 2;
+        border-radius: .5rem;
     }    
     
     .section__subtitle--intro {
@@ -432,6 +433,7 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
+        border-radius: .5rem;
     }
 }
 
