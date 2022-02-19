@@ -458,10 +458,12 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
     overflow: hidden;
 }
 
@@ -475,6 +477,7 @@ header {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+        border-radius: 1.5rem;
 }
 
 .portfolio__item:focus {
