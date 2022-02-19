@@ -469,8 +469,9 @@ header {
 
 @media (max-width: 450px){
     .portfolio__item {
-        background: var(--clr-accent);
+        /* background: var(--clr-accent); */
         overflow: hidden;
+        border-radius: 1.2rem;
     }
 }
 .portfolio__img {
