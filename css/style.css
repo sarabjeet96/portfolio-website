@@ -323,14 +323,13 @@ header {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
     /* margin-top: 1rem; */
-    margin-left: auto;   
+    margin-left: auto;
   }
  
   @media (max-width: 450px){
     .skills-wrapper {
-        margin-left: 5rem;
+        margin-left: 4rem;
     }
-
   }
 
   .skill-header {
@@ -342,8 +341,8 @@ header {
   }
   
   .icon {
-    width: 11.875rem;
-    height: 11.25rem;
+    width: 12rem;
+    height: 11rem;
   }
 
   .icon-card {
@@ -353,7 +352,6 @@ header {
     padding: 20px;
     margin: 10px;
   }
-  
   
 
 .section__title--services::after {
